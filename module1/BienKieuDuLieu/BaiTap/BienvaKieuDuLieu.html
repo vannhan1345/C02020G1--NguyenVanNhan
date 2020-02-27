@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="tong"></p>
+<p id="trungBinh"></p>
+
+<script>
+    let diemLy;
+    let diemHoa;
+    let diemSinh;
+    diemLy =prompt("nhap diem Ly");
+    diemHoa =prompt("nhap diem Hoa");
+    diemSinh =prompt("nhap diem Sinh");
+    let Ly = parseInt(diemLy);
+    let Hoa = parseInt(diemHoa);
+    let Sinh = parseInt(diemSinh);
+    let tong = Ly+Hoa+Sinh;
+    document.getElementById("tong").innerText = "Diem tong la: " + tong;
+    let tb = tong/3;
+    document.getElementById("trungBinh").innerText = "Diem trung binh la: " + tb;
+</script>
+</body>
+</html>
