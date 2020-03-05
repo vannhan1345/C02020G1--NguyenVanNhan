@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+</head>
+<body>
+<script>
+    let choose=parseInt(prompt("1.hien thi thong tin khac hang:"+"\n"+"2.Sua loi thong tin khach hang: "+"\n"+"3.Hien thi so tien phair tra sau khi giam gia:"));
+    let name ="nhan";
+    let idCard="123586";
+    let birthday="12/12/1995";
+    let email="vannhan1345@gmail.com";
+    let address="da nang";
+    let customerType="gold";
+    let discount="20";
+    let accompayning="2";
+    let rentDays="14";
+    let seviceType="house";
+    let roomType="vip";
+    switch (choose) {
+        case 1: {
+            alert("ten: " + name +
+                "\n" + "CMND: " + idCard +
+                "\n" + "Ngay sinh: " + birthday +
+                "\n" + "Email: " + email +
+                "\n" + "Dia chi: " + address +
+                "\n" + "Loai khach hang: " + customerType +
+                "\n" + "Giam gia: " + discount +
+                "\n" + "so luong di kem: " + accompayning +
+                "\n" + "So ngay o: " + rentDays +
+                "\n" + "Loai dich vu: " + seviceType +
+                "\n" + "Loai phong: " + roomType);
+        }
+        break;
+            case 2:{
+              let chooseedit=parseInt( prompt("1.ten: " + name +
+                    "\n" + "2.CMND: " + idCard +
+                    "\n" + "3.Ngay sinh: " + birthday +
+                    "\n" + "4.Email: " + email +
+                    "\n" + "5.Dia chi: " + address +
+                    "\n" + "6.Loai khach hang: " + customerType +
+                    "\n" + "7.Giam gia: " + discount +
+                    "\n" + "8.so luong di kem: " + accompayning +
+                    "\n" + "9.So ngay o: " + rentDays +
+                    "\n" + "10.Loai dich vu: " + seviceType +
+                    "\n" + "11.Loai phong: " + roomType));
+              switch (chooseedit) {
+                  case 1:{
+                     name=prompt("Enter name: ");
+                      alert("ten: " + name +
+                          "\n" + "CMND: " + idCard +
+                          "\n" + "Ngay sinh: " + birthday +
+                          "\n" + "Email: " + email +
+                          "\n" + "Dia chi: " + address +
+                          "\n" + "Loai khach hang: " + customerType +
+                          "\n" + "Giam gia: " + discount +
+                          "\n" + "so luong di kem: " + accompayning +
+                          "\n" + "So ngay o: " + rentDays +
+                          "\n" + "Loai dich vu: " + seviceType +
+                          "\n" + "Loai phong: " + roomType);
+                      break;
+
+                  }
+                  case 2:{
+                      idCard=prompt("Enter ID:");
+                      alert("ten: " + name +
+                          "\n" + "CMND: " + idCard +
+                          "\n" + "Ngay sinh: " + birthday +
+                          "\n" + "Email: " + email +
+                          "\n" + "Dia chi: " + address +
+                          "\n" + "Loai khach hang: " + customerType +
+                          "\n" + "Giam gia: " + discount +
+                          "\n" + "so luong di kem: " + accompayning +
+                          "\n" + "So ngay o: " + rentDays +
+                          "\n" + "Loai dich vu: " + seviceType +
+                          "\n" + "Loai phong: " + roomType);
+                      break;
+                  }
+                  case 3:{
+                      birthday=prompt("Enter birthday: ");
+                      alert("ten: " + name +
+                          "\n" + "CMND: " + idCard +
+                          "\n" + "Ngay sinh: " + birthday +
+                          "\n" + "Email: " + email +
+                          "\n" + "Dia chi: " + address +
+                          "\n" + "Loai khach hang: " + customerType +
+                          "\n" + "Giam gia: " + discount +
+                          "\n" + "so luong di kem: " + accompayning +
+                          "\n" + "So ngay o: " + rentDays +
+                          "\n" + "Loai dich vu: " + seviceType +
+                          "\n" + "Loai phong: " + roomType);
+                      break;
+                  }
+                  case 4:{
+                     email=prompt("Enter email: ");
+                      alert("ten: " + name +
+                          "\n" + "CMND: " + idCard +
+                          "\n" + "Ngay sinh: " + birthday +
+                          "\n" + "Email: " + email +
+                          "\n" + "Dia chi: " + address +
+                          "\n" + "Loai khach hang: " + customerType +
+                          "\n" + "Giam gia: " + discount +
+                          "\n" + "so luong di kem: " + accompayning +
+                          "\n" + "So ngay o: " + rentDays +
+                          "\n" + "Loai dich vu: " + seviceType +
+                          "\n" + "Loai phong: " + roomType);
+                      break;
+
+
+                  }
+                  case 5:{
+                       address=prompt("Enter address: ");
+                          alert("ten: " + name +
+                              "\n" + "CMND: " + idCard +
+                              "\n" + "Ngay sinh: " + birthday +
+                              "\n" + "Email: " + email +
+                              "\n" + "Dia chi: " + address +
+                              "\n" + "Loai khach hang: " + customerType +
+                              "\n" + "Giam gia: " + discount +
+                              "\n" + "so luong di kem: " + accompayning +
+                              "\n" + "So ngay o: " + rentDays +
+                              "\n" + "Loai dich vu: " + seviceType +
+                              "\n" + "Loai phong: " + roomType);
+                          break;
+
+                  }
+                  case 6:{
+                      customerType=prompt("Enter Customer Type: ");
+                      alert("ten: " + name +
+                          "\n" + "CMND: " + idCard +
+                          "\n" + "Ngay sinh: " + birthday +
+                          "\n" + "Email: " + email +
+                          "\n" + "Dia chi: " + address +
+                          "\n" + "Loai khach hang: " + customerType +
+                          "\n" + "Giam gia: " + discount +
+                          "\n" + "so luong di kem: " + accompayning +
+                          "\n" + "So ngay o: " + rentDays +
+                          "\n" + "Loai dich vu: " + seviceType +
+                          "\n" + "Loai phong: " + roomType);
+                      break;
+
+                  }
+                  case 7:{
+                      discount=prompt("Enter Discount: ");
+                      alert("ten: " + name +
+                          "\n" + "CMND: " + idCard +
+                          "\n" + "Ngay sinh: " + birthday +
+                          "\n" + "Email: " + email +
+                          "\n" + "Dia chi: " + address +
+                          "\n" + "Loai khach hang: " + customerType +
+                          "\n" + "Giam gia: " + discount +
+                          "\n" + "so luong di kem: " + accompayning +
+                          "\n" + "So ngay o: " + rentDays +
+                          "\n" + "Loai dich vu: " + seviceType +
+                          "\n" + "Loai phong: " + roomType);
+                      break;
+                  }
+                  case 8:{
+                      accompayning=prompt("Enter number of accompayning: ");
+                      alert("ten: " + name +
+                          "\n" + "CMND: " + idCard +
+                          "\n" + "Ngay sinh: " + birthday +
+                          "\n" + "Email: " + email +
+                          "\n" + "Dia chi: " + address +
+                          "\n" + "Loai khach hang: " + customerType +
+                          "\n" + "Giam gia: " + discount +
+                          "\n" + "so luong di kem: " + accompayning +
+                          "\n" + "So ngay o: " + rentDays +
+                          "\n" + "Loai dich vu: " + seviceType +
+                          "\n" + "Loai phong: " + roomType);
+                      break;
+
+                  }
+                  case 9:{
+                      rentDays=prompt("Enter Rent Days: ");
+                      alert("ten: " + name +
+                          "\n" + "CMND: " + idCard +
+                          "\n" + "Ngay sinh: " + birthday +
+                          "\n" + "Email: " + email +
+                          "\n" + "Dia chi: " + address +
+                          "\n" + "Loai khach hang: " + customerType +
+                          "\n" + "Giam gia: " + discount +
+                          "\n" + "so luong di kem: " + accompayning +
+                          "\n" + "So ngay o: " + rentDays +
+                          "\n" + "Loai dich vu: " + seviceType +
+                          "\n" + "Loai phong: " + roomType);
+                      break;
+                  }
+                  case 10:{
+                      seviceType=prompt("Enter Sevice Type: ");
+                      alert("ten: " + name +
+                          "\n" + "CMND: " + idCard +
+                          "\n" + "Ngay sinh: " + birthday +
+                          "\n" + "Email: " + email +
+                          "\n" + "Dia chi: " + address +
+                          "\n" + "Loai khach hang: " + customerType +
+                          "\n" + "Giam gia: " + discount +
+                          "\n" + "so luong di kem: " + accompayning +
+                          "\n" + "So ngay o: " + rentDays +
+                          "\n" + "Loai dich vu: " + seviceType +
+                          "\n" + "Loai phong: " + roomType);
+                      break;
+                  }
+                  case 11:{
+                      roomType=prompt("Enter Room Type: ");
+                      alert("ten: " + name +
+                          "\n" + "CMND: " + idCard +
+                          "\n" + "Ngay sinh: " + birthday +
+                          "\n" + "Email: " + email +
+                          "\n" + "Dia chi: " + address +
+                          "\n" + "Loai khach hang: " + customerType +
+                          "\n" + "Giam gia: " + discount +
+                          "\n" + "so luong di kem: " + accompayning +
+                          "\n" + "So ngay o: " + rentDays +
+                          "\n" + "Loai dich vu: " + seviceType +
+                          "\n" + "Loai phong: " + roomType);
+                      break;
+                  }
+
+              }
+            }
+
+
+
+    }
+</script>
+</body>
+</html>

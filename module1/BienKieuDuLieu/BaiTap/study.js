@@ -11,15 +11,15 @@ let rentDay=document.getElementById("rentDay").value;
 let seviceType=document.getElementById("seviceType").value;
 let roomType= document.getElementById("roomType").value;
 let totalRoom= document.getElementById("amount");
-
-if (seviceType==="Villa"){
+if (seviceType==="Villa") {
     totalRoom.value=500*rentDay*(1-discount/100);
 }
- else if (seviceType==="House")
-    {
+ else if (seviceType==="House") {
         totalRoom.value = 300 * rentDay * (1 - discount / 100);
     }
-    else{ totalRoom.value = 100 * rentDay * (1 - discount / 100);}
+    else { totalRoom.value = 100 * rentDay * (1 - discount / 100);
+    }
+
     document.getElementById("showID").innerText = id;
     document.getElementById("showName").innerText=name;
     document.getElementById("showDate").innerText=birthday;
@@ -31,6 +31,6 @@ if (seviceType==="Villa"){
     document.getElementById("showRentDay").innerText=rentDay;
     document.getElementById("showSevicetype").innerText=seviceType;
     document.getElementById("showRoomType").innerText=roomType;
-    document.getElementById("amount").value=totalRoom;
+    // document.getElementById("amount").value=totalRoom;
 
 }
