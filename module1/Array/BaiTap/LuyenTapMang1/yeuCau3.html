@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeu Cau 3</title>
+</head>
+<body>
+<script>
+    let arr1=[];
+    let a=0;
+    while (a<3) {
+        let nhap=parseInt(prompt("nhập số"));
+        arr1[a]=nhap;
+        a++;
+    }
+    let aver;
+    let total=0;
+    let max = arr1[0];
+    let index;
+    for (let i = 0; i < arr1.length; i++) {
+        if (max < arr1[i]) {
+            max = arr1[i];
+
+        }
+        total+=arr1[i]
+    }
+    total=total/(arr1.length);
+    document.write("số lớn nhất la:  "+max+" trung binh la :"+total);
+
+</script>
+</body>
+</html>

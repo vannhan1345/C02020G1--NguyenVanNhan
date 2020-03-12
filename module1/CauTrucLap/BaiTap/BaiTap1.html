@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So Nguyen To</title>
+</head>
+<body>
+<script>
+    let numbers=2;
+    let count =0;
+    let i=0;
+
+    let result="";
+    while (count<=20) {
+        let prime = true;
+        for (i = 2; i <= Math.sqrt(numbers); i++) {
+            if (numbers % i === 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime) {
+            count++;
+            result += numbers + " ";
+            // document.write(numbers + "la so nguyen to");
+        }
+        numbers++;
+    }
+     //document.write(number + "ko phai la so nguyen to");
+    document.write(result)
+</script>
+</body>
+</html>

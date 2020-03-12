@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+
+</head>
+<body>
+
+<input type="text" id="english">
+<button onclick="search();">Search</button>
+<input id="Vietnamese">
+
+
+<script>
+    let array1 = ["apple", "banana", "organes", "lemon", "strawbery"];
+    let array2 = ["Trái Táo", "Trái chuối", "Trái cam", "Trái chanh", "Trái Dâu"];
+
+    function search() {
+        let eng = document.getElementById("english").value;
+        let result=0;
+       // let viet = document.getElementById("Vietnamese").value;
+        for (let i = 0; i < array1.length; i++) {
+            if (eng === array1[i]) {
+                result = array2[i];
+                document.getElementById("Vietnamese").value = result;
+                break;
+            } else if(eng !== array1[i]){
+                document.getElementById("Vietnamese").value ="Not found";
+
+            }
+
+        }
+
+    }
+
+
+
+</script>
+</body>
+</html>

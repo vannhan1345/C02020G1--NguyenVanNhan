@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeu Cau 7</title>
+</head>
+<body>
+<script>
+    let minute=parseInt(prompt("nhap so phut goi la: "));
+    let tongphi
+    if (minute<=50){
+        tongphi = minute * 600 + 25000;
+        alert("tong so tien dien thoai la: " + tongphi);
+    }
+    else if(minute<=200){
+        tongphi=50*600+(minute-50)*400+25000;
+        alert("tong so tien dien thoai la: "+tongphi);
+    } else {
+        tongphi=50*600+150*400+(minute-200)*200+25000;
+        alert("tong so tien dien thoai phai la: "+tongphi)
+    }
+
+</script>
+</body>
+</html>

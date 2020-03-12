@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập 3</title>
+</head>
+<body>
+<!--Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+<script>
+    function factorialize(num) {
+
+        let result = num;
+        if (num === 0 || num === 1) {
+            return 1;
+        }
+        while (num > 1) {
+            num--;
+            result *= num;
+        }
+        return result;
+    }
+
+    let num = prompt("Nhập số cần tính giai thừa");
+
+    alert(factorialize(num));
+</script>
+</body>
+</html>

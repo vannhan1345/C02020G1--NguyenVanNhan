@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="number">
+<button onclick="ngay()">Tinh so ngay</button>
+<p id="answer"></p>
+<script>
+    function ngay() {
+        let date=parseInt(document.getElementById("number").value);
+
+        switch (date) {
+            case 1:
+                document.getElementById("answer").innerText="thang"+date+"co 31 ngay";
+                break;
+            case 2:
+                document.getElementById("answer").innerText="thang"+date+"co 28 hoac 29 ngay";
+
+
+        }
+
+
+    }
+</script>
+
+</body>
+</html>

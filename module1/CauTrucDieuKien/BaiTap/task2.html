@@ -11,13 +11,13 @@
     let idCard="123586";
     let birthday="12/12/1995";
     let email="vannhan1345@gmail.com";
-    let address="da nang";
-    let customerType="gold";
-    let discount="20";
+    let address="Đà Nẵng";
+    let customerType="Gold";
+    let discount;
     let accompayning="2";
-    let rentDays="14";
-    let seviceType="house";
-    let roomType="vip";
+    let rentDays=7;
+    let seviceType="Villa";
+    let roomType="Vip";
     switch (choose) {
         case 1: {
             alert("ten: " + name +
@@ -220,9 +220,45 @@
 
               }
             }
+            case 3:{
+                let money=0;
+                if (seviceType=="Villa"){
+                    money=500;
+                } else if(seviceType=="House"){
+                    money=300;
+                }else if (seviceType=="Room"){
+                    money=100;
+                }
+                let temp=0;
+                if(address=="Đà Nẵng"){
+                    temp+=20;
+                }else if(address=="Huế"){
+                    temp+=10;
+                }else if(address=="Quảng Nam"){
+                    temp+=5;
+                }
+                if(rentDays>7){
+                    temp+=30;
+                }else if(rentDays>5){
+                    temp+=20;
+                }else if(rentDays>2){
+                    temp+=10;
+                }
+                if(customerType=="Diamond"){
+                    temp+=15;
+                }else if(customerType=="Platium"){
+                    temp+=10;
+                }else  if(customerType="Gold"){
+                    temp+=5;
+                }else if(customerType=="Silver"){
+                    temp+=2;
+                }else if(customerType="Member"){
+                    temp+=0;
+                }
 
-
-
+                alert( "Total pay: " +(money*rentDays-temp));
+                break;
+            }
     }
 </script>
 </body>

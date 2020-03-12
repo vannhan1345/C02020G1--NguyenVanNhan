@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập 9</title>
+</head>
+<body>
+<!--Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.-->
+<!--Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.-->
+
+<script>
+    let arr = [];
+    for (let i = 0; i < 5; i++) {
+        arr[i] = prompt(" Nhập ký tự: ")
+    }
+    let v = prompt("nhập ký tự cần tìm: ")
+
+    function findsame(arr, v) {
+
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (v == arr[i]) {
+                count++;
+                // result += 1;
+                // document.write("arr[" + i + "]" + "=" + b + "<br>");
+            }
+        }
+        if (count > 0) {
+            return count;
+        } else {
+            return -1;
+        }
+    }
+
+    document.write(findsame(arr,v));
+    // alert(result);
+
+</script>
+</body>
+</html>

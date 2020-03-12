@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <script>
+
+        let year=parseInt(prompt("Enter Year"));
+
+        if (year%4===0&&year%100!==0){
+            alert(year +" nam nhuan");
+        }
+        else if(year%400===0){
+            alert(year +" nam  nhuan");
+        }else alert(year+" nam ko nhuan");
+        //
+        //
+        // if (year%4===0){
+        //     if (year%100===0){
+        //         if(year%400===0){
+        //             isLeadYear = true;
+        //         }
+        //     }
+        //     else {
+        //         isLeadYear = true;
+        //     }
+        //     if (isLeadYear){
+        //         alert(year+ " is a lead year")
+        //     }
+        //     else {
+        //         alert(year+ " is not a lead year")
+        //     }
+        // }
+
+    </script>
+</form>
+</body>
+</html>

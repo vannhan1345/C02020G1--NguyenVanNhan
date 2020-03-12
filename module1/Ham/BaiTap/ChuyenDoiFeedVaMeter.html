@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Đổi Giữa Feed Và Meters</title>
+</head>
+<body>
+<input type="number" id="number1">
+<select id="unit1">
+    <option value="feet">feet</option>;
+    <option value="meters">meters</option>
+</select>
+<select id="unit2">
+    <option value="meters">meters</option>
+    <option value="feet">feet</option>
+</select>
+<button onclick="conver()">convert</button>
+<input id="result">
+<script>
+    function conver() {
+        let num1=document.getElementById("number1").value;
+        let unit3=document.getElementById("unit1").value;
+        let unit4=document.getElementById("unit2").value;
+        if (unit3 === "feet" && unit4 === "meters") {
+            result.value = num1*3.279;
+
+        } else if (unit3 === "meters" && unit4 === "feet") {
+            result.value = num1 * 0.305;
+
+        }else {
+            alert("yeu cau nguoi dung lua chon don vi doi!");
+        }
+    }
+
+
+
+</script>
+
+<!--&lt;!&ndash;<p>meters: <span id="outputmeters"></span></p>&ndash;&gt;-->
+<!--&lt;!&ndash;<input type="number1"&ndash;&gt;-->
+<!--&lt;!&ndash;       oninput="convert1(this.value)"&ndash;&gt;-->
+<!--&lt;!&ndash;       onchange="convert1(this.value)">&ndash;&gt;-->
+<!--&lt;!&ndash;<p>feet : <span id="outputfeet"></span></p>&ndash;&gt;-->
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--&lt;!&ndash;    function convert(valNum) {&ndash;&gt;-->
+<!--&lt;!&ndash;        valNum = parseFloat(valNum);&ndash;&gt;-->
+<!--&lt;!&ndash;        document.getElementById("outputmeters").innerHTML = valNum*3.279;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+<!--&lt;!&ndash;    function convert1(valNum) {&ndash;&gt;-->
+<!--&lt;!&ndash;        valNum = parseFloat(valNum);&ndash;&gt;-->
+<!--&lt;!&ndash;        document.getElementById("outputfeet").innerHTML = valNum*0.305;&ndash;&gt;-->
+<!--&lt;!&ndash;    }&ndash;&gt;-->
+
+<!--// </script>-->
+</body>
+</html>

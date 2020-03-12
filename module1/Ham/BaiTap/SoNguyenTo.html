@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoNguyenTo</title>
+</head>
+<body>
+<input type="number" id="num">
+<button onclick="displayprime()">Check</button>
+
+<script>
+    function checkprime(nhap) {
+        for (let i = 2; i <= Math.sqrt(nhap); i++) {
+            if (nhap % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function displayprime() {
+        let nhap = parseInt(document.getElementById("num").value);
+        if (checkprime(nhap)) {
+            alert(nhap + " là số nguyên tố")
+        } else {
+            alert(nhap + " không phải là số nguyên tố")
+        }
+        let number = 2;
+        while (number < 10000) {
+            if (checkprime(number)) {
+                document.write(number + " ")
+            }
+            number++;
+        }
+    }
+</script>
+</body>
+</html>

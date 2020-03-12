@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1=[];
+    let a=0;
+    while (a<5) {
+        let nhap=parseInt(prompt("nhập số"));
+        arr1[a]=nhap;
+        a++;
+    }
+    let first=0;
+    let last=arr1.length-1;
+
+        while (first<last) {
+            arr1[first]+=arr1[last];
+            arr1[last]=arr1[first]-arr1[last];
+            arr1[first]=arr1[first]-arr1[last];
+            first++;
+            last--;
+        }
+
+    document.write(arr1.toString());
+</script>
+
+</body>
+</html>

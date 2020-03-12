@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let temperature = parseInt(prompt("Enter Temperature"));
+     do {
+        if (temperature >= 100) {
+            temperature = prompt("ban phai giam nhiet do");
+
+        } else if (temperature <= 20) {
+            temperature = prompt("ban phai tang nhiet do");
+        }
+    }while (temperature <20 || temperature > 100);
+    alert("nhiet do on dinh");
+
+</script>
+</body>
+</html>

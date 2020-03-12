@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeu Cau 9</title>
+</head>
+<body>
+<script>
+    let aray=[];
+    let aray1=[];
+    let aray2=[];
+    let i=0;
+    let j=0;
+    let k=0;
+    while (i<2) {
+        let nhap=parseInt(prompt("nhập so mang 1"));
+        aray[i]=nhap;
+        i++;
+    }
+    while (j<2) {
+        let nhap=parseInt(prompt("nhập số mang 2"));
+        aray1[j]=nhap;
+        j++;
+    }
+
+    aray2=(aray).concat(aray1);
+    document.write(aray2.toString())
+</script>
+</body>
+</html>

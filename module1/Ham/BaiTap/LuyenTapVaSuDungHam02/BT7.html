@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tâp 7</title>
+</head>
+<body>
+<!--Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.-->
+<script>
+    let arr = [];
+
+    for (let i = 0; i < 2; i++) {
+        arr[i] = prompt("nhap :")
+    }
+
+    function swap(arr) {
+        let c;
+        let fist = 0;
+        let last = arr.length - 1
+        while (fist < last) {
+            c = arr[last];
+            arr[last] = arr[fist];
+            arr[fist] = c;
+            fist++;
+            last--;
+        }
+    }
+
+    swap(arr);
+    document.write(arr);
+</script>
+</body>
+</html>

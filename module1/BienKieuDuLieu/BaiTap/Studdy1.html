@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let name;
+    let idCard;
+    let birthday;
+    let email;
+    let address;
+    let customerType;
+    let discount;
+    let accompayning;
+    let rentDays;
+    let seviceType;
+    let roomType;
+    name=prompt("Enter Name Customer: ");
+    idCard=prompt("Enter Id Card: ");
+    birthday=prompt("Enter Birthday (dd/mm/yyyy): ");
+    email=prompt("Enter email: ");
+    address=prompt("Enter Address: ");
+    customerType=prompt("Select Customer Type(Diamond,Platinum,Gold,Silver,Member): ");
+    discount=prompt("Enter Discount: ");
+    accompayning=prompt("Enter Number of Accompayning: ");
+    rentDays=prompt("Enter Rent Days: ");
+    seviceType=prompt("Enter Sevice Type(Villa,House,Room): ");
+    roomType=prompt("Enter Room Type(Vip,Business,Normal): ");
+    let total;
+    let villa=500;
+    let house=300;
+    let room=100;
+    if (seviceType==="Villa"){
+     total=villa*rentDays*(1-discount/100);}
+    else if(seviceType==="House"){
+         total=house*rentDays*(1-discount/100);
+    }
+    else { total=100*rentDays*(1-discount/100);}
+
+    alert("Name: "+name+ "\n"+
+    "ID Card: "+idCard +"\n"+"Birthday: "+birthday+"\n"+"Email: "+email+"\n"+"Address: "+address+"\n"+"Type Customer: " +
+        customerType+ "\n"+"Discount: "+discount+"\n"+"Number of Accompayning: "+accompayning+"\n"+"Rent Days: " +
+        +rentDays+"\n"+"Sevice Type: " +  seviceType + "\n" +"Room Type: "+roomType+"\n"+"Total paying: "+total);
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

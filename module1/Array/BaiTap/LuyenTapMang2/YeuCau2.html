@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeu Cau 2</title>
+</head>
+<body>
+<script>
+    let aray=[];
+    let a=0;
+    while (a<5) {
+        let nhap=prompt("nhập phan tu");
+        aray[a]=nhap;
+        a++;
+    }
+    let middle;
+    let first=0;
+    let last=aray.length-1;
+
+    for (let i=0;i<aray.length;i++){
+        if(first<last){
+           aray[middle] =aray[last];
+           aray[last]=aray[first];
+           aray[first]=aray[middle];
+            first++;
+            last--;
+        }
+
+    }
+    document.write(aray.toString());
+</script>
+</body>
+</html>

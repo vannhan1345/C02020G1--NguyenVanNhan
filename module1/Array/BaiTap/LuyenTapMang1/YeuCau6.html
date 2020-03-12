@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeu Cau 6</title>
+</head>
+<body>
+<script>
+    //let arr1=[];
+    //let a=0;
+    let V=5;
+    let flag=false;
+    let nhap1;
+    //while (a<10) {
+         nhap1=prompt("nhập số");
+         nhap1=nhap1.split(",");
+        //arr1[a]=arr1;
+        //a++;
+    //}
+    for (let i=0; i<nhap1.length; i++){
+        if (V==nhap1[i]){
+            flag=true;
+            break;
+        }
+    }
+    if(flag){
+        document.write(V +" is in array");
+    } else {  document.write(V +" is not in array");
+    }
+
+</script>
+</body>
+</html>

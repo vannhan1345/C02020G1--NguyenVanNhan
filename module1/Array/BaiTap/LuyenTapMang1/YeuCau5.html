@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1=[];
+    let a=0;
+    while (a<5) {
+        let nhap=parseInt(prompt("nhập số"));
+        arr1[a]=nhap;
+        a++;
+    }
+    let count=0;
+    for (let i = 0; i < arr1.length; i++) {
+        if ( arr1[i]<0) {
+            document.write("arr"+"["+i+"]"+"="+arr1[i]+"<br>");
+            count++;
+
+        }
+    }document.write("co tat ca la "+count.toString()+" nguyen am");
+</script>
+</body>
+</html>

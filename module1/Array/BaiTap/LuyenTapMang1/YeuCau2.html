@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeu Cau 3</title>
+</head>
+<body>
+<script>
+    let arr1=[];
+    let a=0;
+    while (a<3) {
+        let nhap=prompt("nhập số");
+        arr1[a]=nhap;
+        a++;
+    }
+    let max = arr1[0];
+    let index;
+    for (let i = 1; i < arr1.length; i++) {
+        if (max < arr1[i]) {
+            max = arr1[i];
+            index=i;
+        }
+    }
+    document.write("Vị trí la: "+index+"<br>"+"số lớn nhất la:  "+max);
+</script>
+</body>
+</html>

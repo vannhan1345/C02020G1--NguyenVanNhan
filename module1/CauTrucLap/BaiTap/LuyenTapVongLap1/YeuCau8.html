@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request 8</title>
+</head>
+<body>
+<button onclick="choi();">Play</button>
+<script>
+
+    function choi() {
+        let num1=parseInt(prompt("nhap so a"));
+        let num2=parseInt(prompt("nhap so b"));
+        let kh = Math.floor((Math.random()*(num2-num1))+num1);
+        let sodoan=parseInt(prompt("nhap so ban doan"));
+   while (sodoan!==kh){
+       sodoan=parseInt(prompt("ban can nhap so lai"));
+       // if(sodoan<kh){}
+   } alert("chuc mung")
+
+    }
+    
+</script>
+</body>
+</html>
