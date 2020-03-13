@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yeu Cau 4</title>
+</head>
+<body>
+<script>
+    let arrNameCustomer = [];
+    while (true) {
+        let choose = parseInt(prompt("1.Add New Customers: " + "\n" + "2.Delete Customers: "));
+        switch (choose) {
+            case 1: {
+                let number = parseInt(prompt("Enter number customers you want to add: "));
+                for (let i = 0; i < number; i++) {
+                    let nameCustomer = prompt("Enter name customer: ");
+                    arrNameCustomer.push(nameCustomer);
+                }
+                let result = "";
+                for (let i = 0; i < arrNameCustomer.length; i++) {
+                    result += (i + 1) + "." + arrNameCustomer[i] + "\n";
+
+                }
+                alert(result)
+
+            }
+                break;
+            default: {
+                alert("Failed")
+            }
+
+        }
+    }
+</script>
+</body>
+</html>
