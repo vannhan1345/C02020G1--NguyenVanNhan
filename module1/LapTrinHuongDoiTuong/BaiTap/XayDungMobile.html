@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile</title>
+</head>
+<body>
+<script>
+    class Mobile{
+        constructor(battery,send,inbox,draft){
+            this.battery=battery;
+            this.send=send;
+            this.inbox=inbox;
+            this.draft=draft;
+            this.flag=false;
+
+        }
+        static storyMessage="";
+        getTurnOn () {
+            return this.flag=true;
+
+        }
+        getTurnoff(){
+            return this.flag=false;
+        }
+        isOn(){
+            return this.flag===true;
+
+        }
+        getBattery(){
+            if(this.isOn()){
+                return this.battery
+            }else {
+                alert("Turn on mobile")
+            }
+        }
+        chargeBattery(charge){
+            let currentBattery=this.battery;
+            this.battery=currentBattery+charge
+
+        }
+        reduceBattery(){
+         let currentBattery=this.battery;
+         this.battery=currentBattery-1;
+        }
+        getInbox(){
+            if(this.isOn()){
+               this.reduceBattery();
+             return Mobile.storyMessage
+            }
+        }
+        sendMessage(message){
+            if(this.isOn()){
+                this.reduceBattery();
+                this.send=message;
+                Mobile.storyMessage=message;
+            }
+
+        }
+        getMessage(){
+            if(this.isOn()){
+                this.reduceBattery();
+                return this.send
+            }
+        }
+        getSend() {
+            if (this.isOn()) {
+                this.reduceBattery();
+                return this.send;
+            }
+        }
+
+    }
+    function nokiaProcess() {
+        let nokia=new Mobile(35,"Hello","","")
+        nokia.getTurnOn();
+        alert("On=True Off=flase: "+nokia.isOn());
+        nokia.chargeBattery(20);
+        alert("after charge battery: "+nokia.getBattery());
+        nokia.sendMessage("vui ko ban");
+        alert(nokia.getBattery());
+        document.write( "<h3>"+"nokia send: "+nokia.getSend()+"</h3>"+"<br>" )
+
+    }
+    function iphoneProcess() {
+        let iphone = new Mobile(0, "Welcome Iphone", "", "");
+        iphone.chargeBattery(70);
+        iphone.getTurnOn();
+        alert("True=On False=Off: Iphone: " + iphone.isOn());
+        alert("Iphone battery status: " + iphone.getBattery());
+        document.write("Iphone Inbox: " + iphone.getInbox());
+    }
+    nokiaProcess();
+    iphoneProcess();
+</script>
+
+</body>
+</html>
