@@ -17,14 +17,35 @@
                     arrNameCustomer.push(nameCustomer);
                 }
                 let result = "";
+                arrNameCustomer.sort()
                 for (let i = 0; i < arrNameCustomer.length; i++) {
                     result += (i + 1) + "." + arrNameCustomer[i] + "\n";
 
                 }
-                alert(result)
+                alert(result);
+                break;
+            }
+            case 2: {
+                let check=false;
+                let nameCustomer = prompt("Enter Customer you want to delete: ");
+                for (let i = 0; i < arrNameCustomer.length; i++) {
+                    if (nameCustomer == arrNameCustomer[i]) {
+                        arrNameCustomer.splice(i, 1)
+                        check=true;
+                    }
+                    if(!check){
+                        alert("Name not array")
+                    }
+                }
+                let result = "";
+                arrNameCustomer.sort()
+                for (let i = 0; i < arrNameCustomer.length; i++) {
+                    result += (i + 1) + "." + arrNameCustomer[i] + "\n";
+                }
+                alert(result);
+                break;
 
             }
-                break;
             default: {
                 alert("Failed")
             }
