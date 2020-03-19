@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dd/mm/yyyy</title>
+</head>
+<body>
+<script>
+    function date(str) {
+        let check=/^[\d]{2}\/[\d]{2}\/([\d]{4})$/
+        if(check.test(str)){
+            alert("hợp lệ");
+        }else {
+            alert("ko hợp lệ")
+        }
+    }
+    let date1="12/12/1994";
+    let date2="12/10/19&94"
+    date(date1);
+    date(date2);
+</script>
+</body>
+</html>
