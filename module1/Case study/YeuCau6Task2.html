@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yêu Cầu 6 Task 2</title>
+</head>
+<body>
+<script>
+    class Employee{
+        constructor(name,birthDay,phone,email,idCard,level,location,salary) {
+            this.name=name;
+            this.birthDay=birthDay;
+            this.phone=phone;
+            this.email=email;
+            this.idCard=idCard;
+            this.level=level;
+            this.location=location;
+            this.salary=salary;
+
+        }
+        getName(){
+            return this.name;
+        }
+        setName(newName){
+            return this.name=newName;
+        }
+        getBirthDay(){
+            return this.birthDay;
+        }
+        setBirthDay(newBirthDay){
+            return this.birthDay=newBirthDay;
+        }
+        getPhone(){
+            return this.phone;
+        }
+        setPhone(newPhone){
+            return this.phone=newPhone;
+
+        }
+        getEmail(){
+            return this.email;
+        }
+        setEmail(newEmail){
+            return this.email=newEmail;
+        }
+        getIdCard(){
+            return this.idCard;
+        }
+        setIdCard(newIdCard){
+            return this.idCard=newIdCard;
+        }
+        getLevel(){
+            return this.level;
+        }
+        setLevel(newLevel){
+            return this.level=newLevel;
+
+        }
+        getLocation(){
+            return this.location;
+        }
+        setLocation(newLocation){
+            return this.location=newLocation;
+        }
+        getSalary(){
+            if(this.getLocation()==="Manager"){
+                this.salary=500;
+            } else if(this.getLocation()==="Sale"){
+                this.salary=300;
+            }else if(this.getLocation()==="Marketing"){
+                this.salary=200;
+            }
+            return this.salary;
+        }
+
+    }
+
+    let listEmployee=[];
+    function displayMainMenu() {
+        let choose = parseInt(prompt("1.Add New Employee: " + "\n2.Display Information Employee: "
+            + "\n3.Salary of Employee: " + "\n4.Exit: "));
+        switch (choose) {
+            case 1: {
+                addNewEmployee();
+                break;
+            }
+            case 2: {
+                displayInformationEmployee();
+
+                break;
+            }
+            case 3: {
+                displaySalary();
+
+                break;
+            }
+            case 4: {
+                editCustomer();
+                break;
+            }
+            case 5: {
+                deleteCustomer();
+
+                break;
+            }
+
+            default: {
+                alert("failed")
+            }
+
+        }
+
+    }
+    function addNewEmployee() {
+        let employee=new Employee();
+        employee.setName(prompt("Enter name: "));
+        employee.setBirthDay(prompt("Enter Birthday: "));
+        employee.setPhone(prompt("Enter Phone: "));
+        employee.setEmail(prompt("Enter Email: "));
+        employee.setIdCard(prompt("Enter Id Card: "));
+        employee.setLevel(prompt("Enter Level: "));
+        employee.setLocation(prompt("Enter Location: "));
+        listEmployee.push(employee)
+        alert("Bạn đã thêm thành công");
+        displayMainMenu();
+
+
+    }
+    function displayInformationEmployee() {
+        let temp = "";
+        for (let i = 0; i < listEmployee.length; i++) {
+            temp += i + ". Name: " + listEmployee[i].getName() + "\n";
+        }
+        let chooseDisplay = parseInt(prompt(temp));
+        alert("Tên: " + listEmployee[chooseDisplay].getName() +
+            "\n" + "Ngày sinh: " + listEmployee[chooseDisplay].getBirthDay() +
+            "\n" + "Số điện thoại: " + listEmployee[chooseDisplay].getPhone() +
+            "\n" + "Email: " + listEmployee[chooseDisplay].getEmail() +
+            "\n" + "CMND: " + listEmployee[chooseDisplay].getIdCard() +
+            "\n" + "Trình độ: " + listEmployee[chooseDisplay].getLevel() +
+            "\n" + "Vị trí: " + listEmployee[chooseDisplay].getLocation() );
+        displayMainMenu()
+
+    }
+    function displaySalary() {
+        let temp = "";
+        for (let i = 0; i < listEmployee.length; i++) {
+            temp += i + ". Name: " + listEmployee[i].getName() + "\n";
+        }
+        let chooseDisplay = parseInt(prompt(temp));
+        alert("lương của nhân viên "+listEmployee[chooseDisplay].getName()+": "+listEmployee[chooseDisplay].getSalary())
+
+     displayMainMenu()
+    }
+    displayMainMenu();
+</script>
+</body>
+</html>
